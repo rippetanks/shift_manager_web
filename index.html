@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+
+    <link href="css/hello.week.min.css" rel="stylesheet">
+    <link href="css/hello.week.theme.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="js/hello.week.min.js"></script>
+
+    <script src="js/storage.js"></script>
+    <script src="js/sha3.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+
+    <title>TurniManager</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">TurniManager</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./settings.html">Impostazioni</a>
+          </li>
+          <li class="nav-item">
+            <a id="exit" class="nav-link" href="#">Esci</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker"/>
+            <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+    <div class="container-fluid">
+      <!-- calendar -->
+      <div class="row">
+        <div id="calendar" class="hello-week col">
+          <div class="hello-week__week"></div>
+          <div class="hello-week__month"></div>
+        </div>
+      </div>
+      <!-- legenda -->
+      <div class="row legenda">
+        <div class="col-12 title">Legenda</div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <i class="fas fa-square legend-icon morning"></i>
+          <span>Mattina</span>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <i class="fas fa-square legend-icon afternoon"></i>
+          <span>Pomeriggio</span>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <i class="fas fa-square legend-icon night"></i>
+          <span>Notte</span>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <i class="far fa-square legend-icon rest"></i>
+          <span>Riposo</span>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer text-muted text-center">
+			© 2019 Copyright <a href="https://rippetanks.ddns.net/" target="_blank">Simone Martelli</a> -
+			<a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU Affero GPL</a>
+      <a href="https://github.com/rippetanks" target="_blank"><img src="img/GitHub.png" class="github-icon"></img></a>
+		</footer>
+  </body>
+</html>

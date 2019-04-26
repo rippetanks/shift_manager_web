@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="css/login.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+    <script src="js/storage.js"></script>
+    <script src="js/sha3.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+
+    <title>Login - TurniManager</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+			  <div class="col-md-5 mx-auto">
+          <!-- login -->
+			    <div id="first">
+				    <div class="myform form ">
+					    <div class="logo mb-3">
+						    <div class="col-md-12 text-center">
+							    <h1>Login</h1>
+						    </div>
+					    </div>
+              <form>
+                <div class="form-group">
+                  <label for="lg-email">Email</label>
+                  <input type="email" class="form-control" id="lg-email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="lg-password">Password</label>
+                  <input type="password" id="lg-password"  class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                  <p class="text-center">Accedendo accetti <a href="#">Termini di Utilizzo</a></p>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button id="btn-login" type="button" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                </div>
+                <div class="col-md-12 ">
+                  <div class="login-or">
+                    <hr class="hr-or">
+                    <span class="span-or">or</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <p class="text-center">Non hai un'accout? <a href="#" id="signup">Registrati</a></p>
+                </div>
+              </form>
+				    </div>
+			    </div>
+          <!-- end login -->
+          <!-- signup -->
+			    <div id="second">
+			      <div class="myform form ">
+              <div class="logo mb-3">
+                <div class="col-md-12 text-center">
+                  <h1>Registrati</h1>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="sg-email">Email</label>
+                  <input type="email" class="form-control" id="sg-email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="sg-password">Password</label>
+                  <input type="password" id="sg-password"  class="form-control" placeholder="Password">
+                </div>
+                <div class="col-md-12 text-center mb-3">
+                  <button type="button" id="btn-signup" class=" btn btn-block mybtn btn-primary tx-tfm">Inizia</button>
+                </div>
+                <div class="col-md-12 ">
+                  <div class="form-group">
+                    <p class="text-center"><a href="#" id="signin">Hai già un account?</a></p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- end signup -->
+			  </div>
+		  </div>
+    </div>
+  </body>
+</html>
